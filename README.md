@@ -156,10 +156,14 @@ experiment with running on different simulators in Xcode to be sure.
 1. Have your cards fly in from a deck View located somewhere on screen. This is a little
 bit more difficult than flying to a random location because figuring out where some
 other View is will require some investigation on your part. 
-
+```diff 
+! Status: In progress
+```
 2. If you deal from a deck, have the cards be “face down” while on the deck and then
 flip over as they fly out to their locations when they are dealt. 
-
+```diff 
+! Status: In progress
+```
 3. Draw the actual squiggle instead of using a rectangle.
 ```diff 
 + Status: Done. It is not quite the squiggle used in the official version, but more of tilde. I think I could get it to be the same squiggle by playing around the Bezier curves a bit.
@@ -170,9 +174,13 @@ flip over as they fly out to their locations when they are dealt.
 ```
 5. When cards match, provide some exciting animation. In other words, use animation
 to show that cards are matched in Required Task 7. 
-
+```diff 
+# Status: No yet started
+```
 6. Make your fly away more exciting (maybe the cards spin as they fly away?). 
-
+```diff 
+# Status: No yet started
+```
 7. Keep score somehow in your Set game. You can decide what sort of scoring would
 make the most sense.
 ```diff 
@@ -181,10 +189,14 @@ make the most sense.
 
 8. Give higher scores to players who choose matching Sets faster (i.e. incorporate a time
 component into your scoring system).
-
+```diff 
+# Status: No yet started
+```
 9. Figure out how to penalize players who chose Deal 3 More Cards when a Set was
 actually available to be chosen.
-
+```diff 
+# Status: No yet started
+```
 10. Add a “cheat” button to your UI.
 ```diff 
 + Status: Done. Pressing the button automatically selects two of the three cards in a possible set, if such a set exists on the screen. If no such set exists, no cards are selected. Button is disabled while a match is currently showing.
@@ -196,6 +208,8 @@ Set or the other person gets as much time as they want to try to find a Set (or 
 they get a longer, but not unlimited amount of time?). Maybe hitting “Deal 3 More
 Cards” by one user gives the other some medium amount of time to choose a Set
 without penalty? You will need to figure out how to use Timer to do these timelimited things.
-
+```diff 
+# Status: No yet started
+```
 
 
