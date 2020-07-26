@@ -175,11 +175,11 @@ flip over as they fly out to their locations when they are dealt.
 5. When cards match, provide some exciting animation. In other words, use animation
 to show that cards are matched in Required Task 7. 
 ```diff 
-# Status: No yet started
+# Status: Not yet started
 ```
 6. Make your fly away more exciting (maybe the cards spin as they fly away?). 
 ```diff 
-# Status: No yet started
+# Status: Not yet started
 ```
 7. Keep score somehow in your Set game. You can decide what sort of scoring would
 make the most sense.
@@ -190,12 +190,12 @@ make the most sense.
 8. Give higher scores to players who choose matching Sets faster (i.e. incorporate a time
 component into your scoring system).
 ```diff 
-# Status: No yet started
+# Status: Not yet started
 ```
 9. Figure out how to penalize players who chose Deal 3 More Cards when a Set was
 actually available to be chosen.
 ```diff 
-# Status: No yet started
+# Status: Not yet started
 ```
 10. Add a “cheat” button to your UI.
 ```diff 
@@ -209,7 +209,7 @@ they get a longer, but not unlimited amount of time?). Maybe hitting “Deal 3 M
 Cards” by one user gives the other some medium amount of time to choose a Set
 without penalty? You will need to figure out how to use Timer to do these timelimited things.
 ```diff 
-# Status: No yet started
+# Status: Not yet started
 ```
 
 
