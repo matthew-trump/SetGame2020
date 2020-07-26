@@ -11,4 +11,6 @@ experience!
 ## Required Tasks
 
 1. Implement a game of solo (i.e. one player) Set. 
-```diff +Done```
+```diff 
++Done
+```
