@@ -8,7 +8,7 @@
 
 import SwiftUI
 
-struct SetCardify: ViewModifier{
+struct SetCardify: AnimatableModifier{
     
     var isFaceUp: Bool
     var isSelected: Bool
@@ -46,6 +46,7 @@ struct SetCardify: ViewModifier{
                 .opacity(isFaceUp ? 0 : 1)
             
         }.aspectRatio(self.aspectRatio, contentMode: .fit)
+           
     }
     // MARK: Drawing Constants
     

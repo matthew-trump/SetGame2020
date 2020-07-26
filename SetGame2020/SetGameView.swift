@@ -22,6 +22,10 @@ struct SetGameView: View {
         }
     }
     
+    func getRandomOffscreenOffset() -> CGSize {
+        let angle : Double = Double.random(in: 0..<(2 * Double.pi))
+        return CGSize(width: offscreenRadius*cos(angle), height:offscreenRadius*sin(angle))
+    }
 
     var body: some View {
         VStack{
@@ -50,13 +54,14 @@ struct SetGameView: View {
             
             Grid(viewModel.cards){card in
                 CardView(card: card).onTapGesture{
-                  
-                        if(!card.wasMatched){
+                 
+                    if(!card.wasMatched){
                             self.viewModel.choose(card:card)
-                        }
-                   
-                   
-                }.transition(AnyTransition.offset(x: CGFloat(Int.random(in: -2000...2000)), y:CGFloat(Int.random(in: -2000...2000)))).animation(.easeInOut(duration: 0.4))
+                    }
+                    
+                }.transition(AnyTransition.offset(self.getRandomOffscreenOffset()).animation(.easeOut(duration: 5)))
+                    
+               
             }
             .padding()
             .onAppear{self.dealCards(self.initialNumberOfCards)}
@@ -72,6 +77,7 @@ struct SetGameView: View {
        }
     }
     let initialNumberOfCards : Int = 12
+    let offscreenRadius : Double = 1000.0
 }
 
 
@@ -90,6 +96,7 @@ struct CardView: View {
         Group{
             VStack{
                 ForEach(0..<card.number){_ in
+                   
                     CardSymbol(card: self.card)
                 }.frame(width: min(size.width, size.height*cardAspectRatio) * shapeWidthScale, height: min(size.height,size.width/cardAspectRatio)/shapeHeightScale)
             }
