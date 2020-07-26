@@ -20,3 +20,47 @@ showing, but as soon as it appears, it should immediately deal 12 cards by havin
 ```diff 
 + Status: done
 ```
+
+3. . As the game play progresses, use all the real estate on the screen in an efficient
+manner. Cards should get smaller (or larger) as more (or fewer) appear on-screen at
+the same time, while always using as much space as is available and still being “nicely
+arranged”. All changes to locations
+and/or sizes of cards must be animated. 
+```diff 
++ Status: done
+```
+
+4. Cards can have any aspect ratio you like, but they must all have the same aspect ratio at
+all times (no matter their size and no matter how many are on screen at the same
+time). In other words, cards can be appearing to the user to get larger and smaller as
+the game goes on, but the cards cannot be “stretching” into different aspect ratios as
+the game is played. 
+```diff 
++ Status: done
+```
+
+5. The symbols on cards should be proportional to the size of the card (i.e. large cards
+should have large symbols and smaller cards should have smaller symbols). 
+```diff 
++ Status: done
+```
+
+6. Users must be able to select up to 3 cards by touching on them in an attempt to make
+a Set (i.e. 3 cards which match, per the rules of Set). It must be clearly visible to the
+user which cards have been selected so far. 
+```diff 
++ Status: done
+```
+7. After 3 cards have been selected, you must indicate whether those 3 cards are a match
+or mismatch. You can show this any way you want (colors, borders, backgrounds,
+animation, whatever). Anytime there are 3 cards currently selected, it must be clear to
+the user whether they are a match or not (and the cards involved in a non-matching
+trio must look different than the cards look when there are only 1 or 2 cards in the
+selection). 
+```diff 
++ Status: done
+```
+
+
+
+
