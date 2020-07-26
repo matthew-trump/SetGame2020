@@ -59,7 +59,10 @@ struct SetGameView: View {
                             self.viewModel.choose(card:card)
                     }
                     
-                }.transition(AnyTransition.offset(self.getRandomOffscreenOffset()).animation(.easeOut(duration: 5)))
+                }
+                 .transition(AnyTransition.offset(self.getRandomOffscreenOffset()))
+                 .animation(.easeOut(duration: 5))
+                
                     
                
             }

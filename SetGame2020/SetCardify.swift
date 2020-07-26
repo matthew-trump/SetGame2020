@@ -37,15 +37,15 @@ struct SetCardify: AnimatableModifier{
         ZStack{
             Group{
                 RoundedRectangle(cornerRadius: cornerRadius)
-                              .fill(self.cardColor).opacity(self.isMismatched || self.wasMatched ? 0.2 : 1.0)
-                RoundedRectangle(cornerRadius: cornerRadius).stroke(lineWidth: self.isSelected ? 5: edgeLineWidth).foregroundColor(self.borderColor)
+                    .fill(self.cardColor).opacity(self.isMismatched || self.wasMatched ? 0.2 : 1.0).animation(nil)
+                RoundedRectangle(cornerRadius: cornerRadius).stroke(lineWidth: self.isSelected ? 5: edgeLineWidth).foregroundColor(self.borderColor).animation(nil)
                           content
             }.opacity(isFaceUp ? 1 : 0)
             
             RoundedRectangle(cornerRadius: cornerRadius).fill(Color.orange)
                 .opacity(isFaceUp ? 0 : 1)
             
-        }.aspectRatio(self.aspectRatio, contentMode: .fit)
+            }.aspectRatio(self.aspectRatio, contentMode: .fit)
            
     }
     // MARK: Drawing Constants
