@@ -12,5 +12,5 @@ experience!
 
 1. Implement a game of solo (i.e. one player) Set. 
 ```diff 
-+Done
++ Status: done
 ```
