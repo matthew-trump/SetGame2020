@@ -1,5 +1,5 @@
 # SetGame2020
-Swift UI version of [game of SET](https://en.wikipedia.org/wiki/Set_(card_game)) as specified in [Assignment 3 of Stanford CS193P Spring 2020](https://cs193p.sites.stanford.edu/sites/g/files/sbiybj16636/files/media/file/assignment_3.pdf)
+SwiftUI version of [game of SET](https://en.wikipedia.org/wiki/Set_(card_game)) for iOS as specified in [Assignment 3 of Stanford CS193P Spring 2020](https://cs193p.sites.stanford.edu/sites/g/files/sbiybj16636/files/media/file/assignment_3.pdf)
 
 ## Objective 
 
