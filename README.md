@@ -14,3 +14,9 @@ experience!
 ```diff 
 + Status: done
 ```
+2. When your game is run for the very first time, there should briefly be no cards
+showing, but as soon as it appears, it should immediately deal 12 cards by having them
+“fly in” from random off-screen locations. 
+```diff 
++ Status: done
+```
